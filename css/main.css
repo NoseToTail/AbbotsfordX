@@ -44,7 +44,17 @@ hr {
   font-family: 'Larsseit-Bold';
   font-weight: bold;
   font-size: 1.5em;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(5%);
+  transform: translateY(5%); }
+
+.img-txt.slideUp {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.5s ease-in 0.3s;
+  transition: all 0.5s ease-in 0.3s; }
 
 .msgline {
   font-family: 'Larsseit-Bold';
