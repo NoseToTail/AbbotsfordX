@@ -17,7 +17,7 @@
         </div>
         <div class="skewSlider">
             <!-- <img src="images/AbbotsfordExchangeLogo.svg" alt="AbbotsfordExchangeLogo" class="AELogo"> -->
-            <img src="images/Header Image.jpg" alt="slider" class="img-fluid slider">
+            <img src="images/header.gif" alt="slider" class="img-fluid">
         </div>
     </header>
     <main>
@@ -27,7 +27,7 @@
                     <img src="images/img1.jpg" alt="Abbotsford" class="img-fluid">
                 </div>
                 <div class="col-sm-5 col-md-4">
-                    <p class="img-txt pt-3">AN ENDURING LONG-TERM COMMERCIAL INVESTMENT ON A RIVERFRONT<br>LANDHOLDING OF GLOBAL PROPORTIONS</p>
+                    <p class="pt-3 img-txt">AN ENDURING LONG-TERM COMMERCIAL INVESTMENT ON A RIVERFRONT<br>LANDHOLDING OF GLOBAL PROPORTIONS</p>
                 </div>
             </div>
             <div class="row" dir="rtl">
@@ -129,5 +129,22 @@
             <img src="images/footer.jpg" alt="CBRE Melbourne" class="img-fluid">
         </a>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function(){
+            // This is then function used to detect if the element is scrolled into view
+            function elementScrolled(elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+                var elemTop = $(elem).offset().top + 400;
+                return ((elemTop < docViewBottom) && (elemTop > docViewTop));
+            }
+
+            if(elementScrolled('.img-txt')) {
+                $(".img-txt").addClass("slideUp");
+            };
+        });
+    </script>
 </body>
 </html>
