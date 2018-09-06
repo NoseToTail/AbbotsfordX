@@ -357,3 +357,12 @@ input {
   .right {
     -webkit-transform: translateY(8%);
     transform: translateY(8%); } }
+
+@media (min-width: 1600px) {
+  .video__text {
+    font-size: 1.5em;
+    letter-spacing: 3px; }
+  .icon {
+    margin-right: 0.8em; }
+  .img-txt {
+    font-size: 2.2em; } }
