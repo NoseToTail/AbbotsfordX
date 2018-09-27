@@ -27,7 +27,7 @@ hr {
   padding: 5px;
   background-color: #333; }
 
-.closedBanner {
+.closedBanner img {
   position: fixed;
   z-index: 99;
   top: 15%;
