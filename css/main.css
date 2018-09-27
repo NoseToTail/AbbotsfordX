@@ -27,6 +27,13 @@ hr {
   padding: 5px;
   background-color: #333; }
 
+.closedBanner {
+  position: fixed;
+  z-index: 99;
+  top: 15%;
+  width: 150px;
+}
+
 .header__logo {
   width: 100px;
   margin: 0;
